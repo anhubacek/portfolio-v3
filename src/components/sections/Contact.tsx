@@ -1,5 +1,4 @@
-import React from 'react';
-import { Send, Mail, MessageSquare } from 'lucide-react';
+import { Send,} from 'lucide-react';
 import { GradientText } from '../ui/GradientText';
 
 export function Contact() {
