@@ -1,32 +1,35 @@
-import React from 'react';
-import { ExternalLink, Github, Camera, Compass, Palette } from 'lucide-react';
-import { Card3D } from '../ui/Card3D';
-import { GradientText } from '../ui/GradientText';
+import React from "react";
+import { ExternalLink, Github, Camera, Compass, Palette } from "lucide-react";
+import { Card3D } from "../Card3D";
+import { GradientText } from "../GradientText";
 
 const projects = [
   {
-    title: 'Astral Gallery',
-    description: 'Digital art platform inspired by celestial photography',
-    image: 'https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&q=80&w=1600',
-    tech: ['Next.js', 'Three.js', 'WebGL'],
-    color: 'from-pink-500 to-rose-500',
-    icon: <Camera className="w-6 h-6" />
+    title: "Astral Gallery",
+    description: "Digital art platform inspired by celestial photography",
+    image:
+      "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&q=80&w=1600",
+    tech: ["Next.js", "Three.js", "WebGL"],
+    color: "from-pink-500 to-rose-500",
+    icon: <Camera className="w-6 h-6" />,
   },
   {
-    title: 'Fashion Forecast',
-    description: 'AI-powered trend prediction using cosmic patterns',
-    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1600',
-    tech: ['Python', 'TensorFlow', 'React'],
-    color: 'from-purple-500 to-indigo-500',
-    icon: <Compass className="w-6 h-6" />
+    title: "Fashion Forecast",
+    description: "AI-powered trend prediction using cosmic patterns",
+    image:
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1600",
+    tech: ["Python", "TensorFlow", "React"],
+    color: "from-purple-500 to-indigo-500",
+    icon: <Compass className="w-6 h-6" />,
   },
   {
-    title: 'Stellar Studio',
-    description: 'Creative collaboration platform for digital artists',
-    image: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&q=80&w=1600',
-    tech: ['React', 'WebRTC', 'Node.js'],
-    color: 'from-cyan-500 to-blue-500',
-    icon: <Palette className="w-6 h-6" />
+    title: "Stellar Studio",
+    description: "Creative collaboration platform for digital artists",
+    image:
+      "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&q=80&w=1600",
+    tech: ["React", "WebRTC", "Node.js"],
+    color: "from-cyan-500 to-blue-500",
+    icon: <Palette className="w-6 h-6" />,
   },
 ];
 
@@ -50,7 +53,9 @@ export function Projects() {
                 />
                 <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end">
                   <div className="text-white mb-3">{project.icon}</div>
-                  <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    {project.title}
+                  </h3>
                   <p className="text-gray-200 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, techIndex) => (
@@ -63,10 +68,16 @@ export function Projects() {
                     ))}
                   </div>
                   <div className="flex items-center gap-4">
-                    <a href="#" className="text-white hover:text-pink-400 transition-colors">
+                    <a
+                      href="#"
+                      className="text-white hover:text-pink-400 transition-colors"
+                    >
                       <Github className="w-6 h-6" />
                     </a>
-                    <a href="#" className="text-white hover:text-pink-400 transition-colors">
+                    <a
+                      href="#"
+                      className="text-white hover:text-pink-400 transition-colors"
+                    >
                       <ExternalLink className="w-6 h-6" />
                     </a>
                   </div>

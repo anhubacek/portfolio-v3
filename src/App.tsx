@@ -1,14 +1,14 @@
-import { Hero } from './components/sections/Hero';
-import { Skills } from './components/sections/Skills';
-import { Contact } from './components/sections/Contact';
+import { Hero } from "./containers/Hero";
+import { Skills } from "./containers/Skills";
+import { Contact } from "./containers/Contact";
 
-import './styles/animations.css';
-import { Header } from './components/Header';
+import "./styles/animations.css";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <div className="min-h-screen">
-      <Header/>
+      <Header />
       <Hero />
       <Skills />
       {/* <Projects /> */}

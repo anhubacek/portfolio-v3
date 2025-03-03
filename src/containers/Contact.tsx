@@ -1,7 +1,46 @@
-import { Send,} from 'lucide-react';
-import { GradientText } from '../ui/GradientText';
+import { Send } from "lucide-react";
+import { GradientText } from "../components/GradientText";
+import React from "react";
 
 export function Contact() {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const formUrl = process.env.FORM_URL;
+      if (!formUrl) {
+        console.error("FORM_URL is not defined in the environment variables");
+        return;
+      }
+      const response = await fetch(formUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+          "entry.YOUR_NAME_ENTRY_ID": data.name as string,
+          "entry.YOUR_EMAIL_ENTRY_ID": data.email as string,
+          "entry.YOUR_MESSAGE_ENTRY_ID": data.message as string,
+        }).toString(),
+      });
+
+      if (response.ok) {
+        console.log("Form successfully submitted");
+      } else {
+        console.error("Error submitting form", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error submitting form", error);
+    }
+  };
   return (
     <section id="contact" className="py-32 gradient-bg relative">
       <div className="absolute inset-0 bg-black/10"></div>
@@ -11,10 +50,13 @@ export function Contact() {
             Let's Create Something <GradientText>Extraordinary</GradientText>
           </h2>
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={onSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-lg text-white mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-lg text-white mb-2"
+                  >
                     Name
                   </label>
                   <input
@@ -25,7 +67,10 @@ export function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-lg text-white mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-lg text-white mb-2"
+                  >
                     Email
                   </label>
                   <input
@@ -37,7 +82,10 @@ export function Contact() {
                 </div>
               </div>
               <div>
-                <label htmlFor="message" className="block text-lg text-white mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-lg text-white mb-2"
+                >
                   Message
                 </label>
                 <textarea
