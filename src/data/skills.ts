@@ -3,6 +3,7 @@ export const animation = {
   title: "Bringing <br> ideas<br>to life",
   items: [
     {
+      id: 1,
       image: "/assets/images/services/figma.png",
       alt: "Figma",
       style: {
@@ -23,6 +24,7 @@ export const animation = {
       },
     },
     {
+      id: 2,
       image: "/assets/images/services/nodejs.png",
       alt: "NodeJS",
       style: {
@@ -43,6 +45,7 @@ export const animation = {
       },
     },
     {
+      id: 3,
       image: "/assets/images/services/react.png",
       alt: "React",
       style: {
@@ -63,6 +66,7 @@ export const animation = {
       },
     },
     {
+      id: 4,
       image: "/assets/images/services/javascript.png",
       alt: "Javascript",
       style: {
@@ -83,6 +87,7 @@ export const animation = {
       },
     },
     {
+      id: 5,
       image: "/assets/images/services/redux.png",
       alt: "Redux",
       style: {
@@ -103,14 +108,15 @@ export const animation = {
       },
     },
     {
+      id: 6,
       image: "/assets/images/services/maria.png",
       alt: "MariaDB",
       style: {
         desktop: {
-          left: "42%",
+          left: "26%",
           right: "",
           top: "",
-          bottom: "-30px",
+          bottom: "10px",
           animationDelay: "1s",
         },
         mobile: {
@@ -123,6 +129,7 @@ export const animation = {
       },
     },
     {
+      id: 7,
       image: "/assets/images/services/typescript.png",
       alt: "Typescript",
       style: {
@@ -143,28 +150,30 @@ export const animation = {
       },
     },
     {
+      id: 8,
       image: "/assets/images/services/postman.png",
-      alt: "Python",
+      alt: "Postman",
       style: {
         desktop: {
           left: "",
           right: "-20px",
           top: "",
           bottom: "-40px",
-          animationDelay: "0.3s",
+          animationDelay: "1.3s",
         },
         mobile: {
           left: "",
-          right: "0px",
+          right: "5px",
           top: "",
-          bottom: "30px",
-          animationDelay: "0.3s",
+          bottom: "35px",
+          animationDelay: "1.3s",
         },
       },
     },
     {
+      id: 9,
       image: "/assets/images/services/next.png",
-      alt: "Next",
+      alt: "NextJS",
       style: {
         desktop: {
           left: "",
@@ -183,44 +192,26 @@ export const animation = {
       },
     },
     {
+      id: 10,
       image: "/assets/images/services/datadog.png",
-      alt: "Dataog",
+      alt: "Datadog",
       style: {
         desktop: {
           left: "",
-          right: "-10px",
+          right: "-10%",
           top: "",
           bottom: "-70px",
-          animationDelay: "0.3s",
+          animationDelay: "0s",
         },
         mobile: {
           left: "",
-          right: "15px",
+          right: "0px",
           top: "",
-          bottom: "60px",
-          animationDelay: "0.3s",
+          bottom: "40px",
+          animationDelay: "1s",
         },
       },
     },
-    {
-      image: "/assets/images/services/astro.png",
-      alt: "Astro",
-      style: {
-        desktop: {
-          left: "",
-          right: "-40px",
-          top: "",
-          bottom: "-10px",
-          animationDelay: "0.2s",
-        },
-        mobile: {
-          left: "",
-          right: "40px",
-          top: "",
-          bottom: "10px",
-          animationDelay: "0.2s",
-        },
-      },
-    },
+    
   ],
 };

@@ -14,30 +14,38 @@ export const SkillsAnimation = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const height = container.current as any;
-    if (
-      height &&
-      scrollY > height?.offsetTop - 200 &&
-      scrollY < height?.offsetTop + height?.offsetHeight
-    ) {
-      animationItemsRef.current.forEach((item) =>
-        item.classList.remove("initial-position")
-      );
-      animationItemsRef.current.forEach((item) =>
-        item.classList.add("regular-position")
-      );
-    } else {
-      animationItemsRef.current.forEach((item) =>
-        item.classList.remove("regular-position")
-      );
-      animationItemsRef.current.forEach((item) =>
-        item.classList.remove("initial-animation")
-      );
-    }
+      if (
+        height &&
+        scrollY > height?.offsetTop - 150 &&
+        scrollY < height?.offsetTop + height?.offsetHeight
+      ) {
+        animationItemsRef.current.forEach((item) =>
+          item.classList.remove("initial-position")
+        );
+        animationItemsRef.current.forEach((item) =>
+          item.classList.add("regular-position")
+        );
+      } else {
+        animationItemsRef.current.forEach((item) =>
+          item.classList.remove("regular-position")
+        );
+        animationItemsRef.current.forEach((item) =>
+          item.classList.remove("initial-animation")
+        );
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  console.log(animationItemsRef.current);
+
+  const setRef = (el: HTMLDivElement | null, index: number) => {
+    if (el) {
+      animationItemsRef.current[index] = el;
+    }
+  };
 
   return (
     <SkillsAnimationWrapper ref={container}>
@@ -48,13 +56,7 @@ export const SkillsAnimation = () => {
               <AnimationItemWrapper key={index} position={item.style}>
                 <div
                   className={`animation-item initial-position`}
-                  ref={(el) => {
-                    if (el) {
-                      if (animationItemsRef.current.length < 8) {
-                        animationItemsRef.current.push(el);
-                      }
-                    }
-                  }}
+                  ref={(el) => setRef(el, index)}
                 >
                   <div className="logo">
                     <img alt={item.alt} src={item.image} />
@@ -66,10 +68,8 @@ export const SkillsAnimation = () => {
         </div>
         <div className="blur"></div>
         <div className="animation-text">
-        {/* <CustomTag text={animation.tag} /> */}
-        <span>{animation.tag}</span>
-        <h3 style={{ color: "white" }} dangerouslySetInnerHTML={{ __html: animation.title }}></h3>
-      </div>
+          <h3 dangerouslySetInnerHTML={{ __html: animation.title }}></h3>
+        </div>
       </div>
     </SkillsAnimationWrapper>
   );

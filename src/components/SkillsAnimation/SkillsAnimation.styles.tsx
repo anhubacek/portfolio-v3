@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const SkillsAnimationWrapper = styled.div`
   padding: 10px 10% 100px 10%;
-  height: 100vh;
+  height: 120vh;
+  padding-top: 15vh;
   h2 {
     font-family: "Lufga Medium";
     font-size: 40px;
@@ -70,10 +71,10 @@ export const SkillsAnimationWrapper = styled.div`
       align-items: center;
       flex-direction: column;
       h3 {
-        color: #000;
+        color: #fff;
         text-align: center;
         font-family: "Lufga Medium";
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 600;
         margin-top: 24px;
       }
@@ -81,7 +82,7 @@ export const SkillsAnimationWrapper = styled.div`
   }
   @media screen and (max-width: 768px) {
     padding: 10px 24px 30px 24px;
-    height: 60vh;
+    height: 50vh;
     h2 {
       font-size: 20px;
     }
@@ -95,11 +96,10 @@ export const SkillsAnimationWrapper = styled.div`
     }
     .animation {
       position: relative;
-      height: 420px;
+      height: 50vh;
       width: 100%;
       margin-top: 30px;
       margin-bottom: 30px;
-      overflow: hidden;
       .blur {
         width: 250px;
         height: 250px;
@@ -107,12 +107,12 @@ export const SkillsAnimationWrapper = styled.div`
       }
       .animation-text {
         width: 100%;
-        top: 50%;
+        top: 45%;
         h3 {
           font-family: "Lufga Medium";
           font-size: 18px;
           font-weight: 600;
-          margin-top: 16px;
+          margin-top: 10px;
         }
       }
     }
@@ -220,6 +220,12 @@ export const AnimationItemWrapper = styled.div<{
       width: 48px;
       height: 48px;
       padding: 8px;
+    }
+
+    .initial-position {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .regular-position {

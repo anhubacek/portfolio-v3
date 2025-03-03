@@ -1,9 +1,9 @@
 import { Hero } from "./containers/Hero";
 import { Skills } from "./containers/Skills";
 import { Contact } from "./containers/Contact";
+import { Header } from "./components/Header";
 
 import "./styles/animations.css";
-import { Header } from "./components/Header";
 
 function App() {
   return (
