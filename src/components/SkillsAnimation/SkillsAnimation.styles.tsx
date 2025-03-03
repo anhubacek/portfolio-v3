@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SkillsAnimationWrapper = styled.div`
   padding: 10px 10% 100px 10%;
+  height: 100vh;
   h2 {
     font-family: "Lufga Medium";
     font-size: 40px;
@@ -39,18 +40,17 @@ export const SkillsAnimationWrapper = styled.div`
 
   .animation {
     position: relative;
-    height: 750px;
+    height: 90vh;
     width: 100%;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 10vh;
     .blur {
       border-radius: 634px;
       background: radial-gradient(
         55.71% 55.71% at 50% 50%,
-        rgba(19, 113, 251, 0.16) 0%,
-        rgba(19, 113, 251, 0) 100%
+        rgba(3, 192, 206, 0.16) 0%,
+        rgba(234, 5, 194, 0) 100%
       );
-      filter: blur(59.20000076293945px);
+      filter: blur(60px);
       width: 634px;
       height: 616px;
       position: absolute;
@@ -81,6 +81,7 @@ export const SkillsAnimationWrapper = styled.div`
   }
   @media screen and (max-width: 768px) {
     padding: 10px 24px 30px 24px;
+    height: 60vh;
     h2 {
       font-size: 20px;
     }
@@ -169,20 +170,16 @@ export const AnimationItemWrapper = styled.div<{
   }
   .animation-item {
     display: flex;
-    width: 116px;
-    height: 116px;
-    padding: 27px;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     align-items: center;
-    border-radius: 24px;
-    border: 1.5px solid #ebeff6;
-    background: #fff;
     position: absolute;
     z-index: 80;
     .logo {
       position: relative;
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
       img {
         object-fit: contain;
       }

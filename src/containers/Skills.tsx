@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   Code2,
   Database,
@@ -17,7 +17,7 @@ const skills = [
     title: "Frontend Development",
     description:
       "Developing responsive and intuitive interfaces with React, Next.js, Expo, React Native and modern CSS frameworks",
-    color: "from-pink-500 to-rose-500",
+    color: "from-pink-500 to-rose-500 ",
   },
   {
     icon: <Server className="w-8 h-8" />,

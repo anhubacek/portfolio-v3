@@ -3,7 +3,7 @@ export const animation = {
   title: "Bringing <br> ideas<br>to life",
   items: [
     {
-      image: "/assets/images/services/ux-ui/figma.png",
+      image: "/assets/images/services/figma.png",
       alt: "Figma",
       style: {
         desktop: {
@@ -17,19 +17,19 @@ export const animation = {
           left: "10px",
           right: "",
           top: "",
-          bottom: "50px",
+          bottom: "60px",
           animationDelay: "0.3s",
         },
       },
     },
     {
-      image: "/assets/images/services/ux-ui/photoshop.png",
-      alt: "Photoshop",
+      image: "/assets/images/services/nodejs.png",
+      alt: "NodeJS",
       style: {
         desktop: {
           left: "22%",
           right: "",
-          top: "20px",
+          top: "30px",
           bottom: "",
           animationDelay: "1.2s",
         },
@@ -43,8 +43,8 @@ export const animation = {
       },
     },
     {
-      image: "/assets/images/services/ux-ui/illustrator.png",
-      alt: "Illustrator",
+      image: "/assets/images/services/react.png",
+      alt: "React",
       style: {
         desktop: {
           left: "-20px",
@@ -63,8 +63,8 @@ export const animation = {
       },
     },
     {
-      image: "/assets/images/services/ux-ui/procreate.png",
-      alt: "Procreate",
+      image: "/assets/images/services/javascript.png",
+      alt: "Javascript",
       style: {
         desktop: {
           left: "8%",
@@ -83,8 +83,8 @@ export const animation = {
       },
     },
     {
-      image: "/assets/images/services/ux-ui/codepen.png",
-      alt: "Codepen",
+      image: "/assets/images/services/redux.png",
+      alt: "Redux",
       style: {
         desktop: {
           left: "",
@@ -96,15 +96,15 @@ export const animation = {
         mobile: {
           left: "",
           right: "0%",
-          top: "20px",
+          top: "40px",
           bottom: "",
           animationDelay: "2s",
         },
       },
     },
     {
-      image: "/assets/images/services/ux-ui/adobe-xd.png",
-      alt: "Adobe XD",
+      image: "/assets/images/services/maria.png",
+      alt: "MariaDB",
       style: {
         desktop: {
           left: "42%",
@@ -123,8 +123,8 @@ export const animation = {
       },
     },
     {
-      image: "/assets/images/services/ux-ui/cinema.png",
-      alt: "Cinema",
+      image: "/assets/images/services/typescript.png",
+      alt: "Typescript",
       style: {
         desktop: {
           left: "80%",
@@ -143,8 +143,8 @@ export const animation = {
       },
     },
     {
-      image: "/assets/images/services/ux-ui/notion.png",
-      alt: "Notion",
+      image: "/assets/images/services/postman.png",
+      alt: "Python",
       style: {
         desktop: {
           left: "",
@@ -155,10 +155,70 @@ export const animation = {
         },
         mobile: {
           left: "",
-          right: "20px",
+          right: "0px",
           top: "",
           bottom: "30px",
           animationDelay: "0.3s",
+        },
+      },
+    },
+    {
+      image: "/assets/images/services/next.png",
+      alt: "Next",
+      style: {
+        desktop: {
+          left: "",
+          right: "-50px",
+          top: "",
+          bottom: "-50px",
+          animationDelay: "0.3s",
+        },
+        mobile: {
+          left: "",
+          right: "30px",
+          top: "",
+          bottom: "40px",
+          animationDelay: "0.3s",
+        },
+      },
+    },
+    {
+      image: "/assets/images/services/datadog.png",
+      alt: "Dataog",
+      style: {
+        desktop: {
+          left: "",
+          right: "-10px",
+          top: "",
+          bottom: "-70px",
+          animationDelay: "0.3s",
+        },
+        mobile: {
+          left: "",
+          right: "15px",
+          top: "",
+          bottom: "60px",
+          animationDelay: "0.3s",
+        },
+      },
+    },
+    {
+      image: "/assets/images/services/astro.png",
+      alt: "Astro",
+      style: {
+        desktop: {
+          left: "",
+          right: "-40px",
+          top: "",
+          bottom: "-10px",
+          animationDelay: "0.2s",
+        },
+        mobile: {
+          left: "",
+          right: "40px",
+          top: "",
+          bottom: "10px",
+          animationDelay: "0.2s",
         },
       },
     },
