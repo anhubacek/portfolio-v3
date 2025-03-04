@@ -19,15 +19,20 @@ export function Hero() {
             >
               Welcome!
             </span> */}
-            <GradientText className="text-3xl md:text-5xl">
+            {/* <GradientText className="text-3xl md:text-5xl">
               Hello! I'm
             </GradientText>
-            <br />
-            <GradientText>Andrea Hubacek</GradientText>
+            <br /> */}
+            <GradientText>ANDREA HUBACEK</GradientText>
           </h1>
-          <h2 className="text-xl md:text-4xl font-semibold mb-6 md:mb-10 md:mt-8">
-            Software Engineer crafting digital experiences.
+          <h2 className="text-xl md:text-5xl font-semibold mb-6 md:mb-6 md:mt-8 px-4">
+            Software Engineer
           </h2>
+
+          <h2 className="text-xl md:text-3xl font-semibold mb-6 md:mb-10 ">
+            Crafting digital experiences
+          </h2>
+
           {/* <h2 className="text-xl md:text-4xl font-semibold mb-6 md:mb-10 md:mt-8">
             Bringing ideas to life
           </h2> */}

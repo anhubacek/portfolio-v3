@@ -42,16 +42,19 @@ export const SkillsAnimationWrapper = styled.div`
   .animation {
     position: relative;
     height: 90vh;
-    width: 100%;
+    width: 80%;
     margin-top: 10vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     .blur {
       border-radius: 634px;
       background: radial-gradient(
         55.71% 55.71% at 50% 50%,
-        rgba(3, 192, 206, 0.16) 0%,
-        rgba(234, 5, 194, 0) 100%
+        rgba(20, 150, 159, 0.29) 0%,
+        rgba(74, 20, 150, 0.33) 100%
       );
-      filter: blur(60px);
+      filter: blur(90px);
       width: 634px;
       height: 616px;
       position: absolute;
@@ -70,13 +73,20 @@ export const SkillsAnimationWrapper = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      text-align: center;
+      font-weight: 800;
+      margin-top: 24px;
+      text-transform: uppercase;
       h3 {
-        color: #fff;
-        text-align: center;
-        font-family: "Lufga Medium";
-        font-size: 50px;
-        font-weight: 600;
-        margin-top: 24px;
+        line-height: 1;
+        transition: 2s ease-in-out;
+        font-size: 80px;
+      }
+
+      .black-text {
+        color: #000;
+        transition: 2s ease-in-out;
+        font-size: 10px;
       }
     }
   }
@@ -96,9 +106,9 @@ export const SkillsAnimationWrapper = styled.div`
     }
     .animation {
       position: relative;
-      height: 50vh;
+      height: 60vh;
       width: 100%;
-      margin-top: 30px;
+      margin-top: 60px;
       margin-bottom: 30px;
       .blur {
         width: 250px;
@@ -108,11 +118,17 @@ export const SkillsAnimationWrapper = styled.div`
       .animation-text {
         width: 100%;
         top: 45%;
+
         h3 {
-          font-family: "Lufga Medium";
-          font-size: 18px;
-          font-weight: 600;
-          margin-top: 10px;
+          line-height: 1;
+          transition: 2s ease-in-out;
+          font-size: 30px;
+        }
+
+        .black-text {
+          color: #000;
+          transition: 2s ease-in-out;
+          font-size: 10px;
         }
       }
     }
@@ -184,6 +200,7 @@ export const AnimationItemWrapper = styled.div<{
         object-fit: contain;
       }
     }
+    opacity: 0%;
   }
 
   .regular-position {
@@ -193,12 +210,14 @@ export const AnimationItemWrapper = styled.div<{
     bottom: ${(props) => props.position.desktop.bottom || "auto"};
     animation: shoot 1.5s ease-out forwards, float 5s linear infinite;
     animation-delay: 0s, ${(props) => props.position.desktop.animationDelay};
+    opacity: 100%;
   }
 
   .initial-position {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0%;
   }
   @media screen and (max-width: 768px) {
     @keyframes shoot {

@@ -18,11 +18,11 @@ const FooterWrapper = styled.footer`
     gap: 5px;
     padding: 30px 0;
     background: black;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.6s ease-in-out;
   }
 
   ul {
-    gap: 1rem;
+    gap: 1.5rem;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -30,7 +30,7 @@ const FooterWrapper = styled.footer`
   }
 
   h5 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .tight {
@@ -38,7 +38,12 @@ const FooterWrapper = styled.footer`
     width: 100%;
     background: black;
     margin-top: -60px;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
   }
 
   @media (max-width: 768px) {
@@ -48,7 +53,7 @@ const FooterWrapper = styled.footer`
       width: 100%;
       background: black;
       margin-top: -70px;
-      transition: all 0.8s ease-in-out;
+      transition: all 0.6s ease-in-out;
     }
   }
 `;
@@ -62,7 +67,7 @@ const Footer = () => {
       const heightFooter = footer.current as any;
       if (
         heightFooter &&
-        scrollY > heightFooter?.offsetTop - 700 &&
+        scrollY > heightFooter?.offsetTop - 800 &&
         scrollY < heightFooter?.offsetTop + heightFooter?.offsetHeight
       ) {
         footer?.current?.classList.add("tight");
@@ -87,7 +92,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              <img src="/assets/icons/linkedin.png" />
             </a>
           </li>
           <li>
@@ -96,7 +101,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub
+              <img src="/assets/icons/github.png" />
             </a>
           </li>
           <li>
@@ -105,7 +110,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Behance
+              <img src="/assets/icons/behance.png" />
             </a>
           </li>
         </ul>

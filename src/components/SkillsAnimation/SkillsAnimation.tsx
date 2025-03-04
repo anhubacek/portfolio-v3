@@ -5,10 +5,12 @@ import {
   AnimationItemWrapper,
   SkillsAnimationWrapper,
 } from "./SkillsAnimation.styles";
+import { GradientText } from "../GradientText";
 
 export const SkillsAnimation = () => {
   const container = useRef(null);
   const animationItemsRef = useRef<HTMLDivElement[]>([]);
+  const text = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +27,7 @@ export const SkillsAnimation = () => {
         animationItemsRef.current.forEach((item) =>
           item.classList.add("regular-position")
         );
+        text.current?.classList.remove("black-text");
       } else {
         animationItemsRef.current.forEach((item) =>
           item.classList.remove("regular-position")
@@ -32,6 +35,7 @@ export const SkillsAnimation = () => {
         animationItemsRef.current.forEach((item) =>
           item.classList.remove("initial-animation")
         );
+        text.current?.classList.add("black-text");
       }
     };
 
@@ -39,7 +43,7 @@ export const SkillsAnimation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  console.log(animationItemsRef.current);
+
 
   const setRef = (el: HTMLDivElement | null, index: number) => {
     if (el) {
@@ -66,9 +70,11 @@ export const SkillsAnimation = () => {
             );
           })}
         </div>
-        <div className="blur"></div>
+        {/* <div className="blur"></div> */}
         <div className="animation-text">
-          <h3 dangerouslySetInnerHTML={{ __html: animation.title }}></h3>
+          <GradientText>
+            <h3 ref={text} dangerouslySetInnerHTML={{ __html: animation.title }}></h3>
+          </GradientText>
         </div>
       </div>
     </SkillsAnimationWrapper>
