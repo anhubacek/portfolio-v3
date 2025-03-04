@@ -46,8 +46,8 @@ export const animation = {
     },
     {
       id: 3,
-      image: "/assets/images/services/react.png",
-      alt: "React",
+      image: "/assets/images/services/javascript.png",
+      alt: "Javascript",
       style: {
         desktop: {
           left: "-20px",
@@ -67,8 +67,8 @@ export const animation = {
     },
     {
       id: 4,
-      image: "/assets/images/services/javascript.png",
-      alt: "Javascript",
+      image: "/assets/images/services/react.png",
+      alt: "React",
       style: {
         desktop: {
           left: "8%",
@@ -151,8 +151,8 @@ export const animation = {
     },
     {
       id: 8,
-      image: "/assets/images/services/postman.png",
-      alt: "Postman",
+      image: "/assets/images/services/mongo.png",
+      alt: "MongoDB",
       style: {
         desktop: {
           left: "",
@@ -170,48 +170,48 @@ export const animation = {
         },
       },
     },
-    {
-      id: 9,
-      image: "/assets/images/services/next.png",
-      alt: "NextJS",
-      style: {
-        desktop: {
-          left: "",
-          right: "-50px",
-          top: "",
-          bottom: "-50px",
-          animationDelay: "0.3s",
-        },
-        mobile: {
-          left: "",
-          right: "30px",
-          top: "",
-          bottom: "40px",
-          animationDelay: "0.3s",
-        },
-      },
-    },
-    {
-      id: 10,
-      image: "/assets/images/services/datadog.png",
-      alt: "Datadog",
-      style: {
-        desktop: {
-          left: "",
-          right: "-10%",
-          top: "",
-          bottom: "-70px",
-          animationDelay: "0s",
-        },
-        mobile: {
-          left: "",
-          right: "0px",
-          top: "",
-          bottom: "40px",
-          animationDelay: "1s",
-        },
-      },
-    },
+    // {
+    //   id: 9,
+    //   image: "/assets/images/services/next.png",
+    //   alt: "NextJS",
+    //   style: {
+    //     desktop: {
+    //       left: "",
+    //       right: "-50px",
+    //       top: "",
+    //       bottom: "-50px",
+    //       animationDelay: "0.3s",
+    //     },
+    //     mobile: {
+    //       left: "",
+    //       right: "30px",
+    //       top: "",
+    //       bottom: "40px",
+    //       animationDelay: "0.3s",
+    //     },
+    //   },
+    // },
+    // {
+    //   id: 10,
+    //   image: "/assets/images/services/datadog.png",
+    //   alt: "Datadog",
+    //   style: {
+    //     desktop: {
+    //       left: "",
+    //       right: "-10%",
+    //       top: "",
+    //       bottom: "-70px",
+    //       animationDelay: "0s",
+    //     },
+    //     mobile: {
+    //       left: "",
+    //       right: "0px",
+    //       top: "",
+    //       bottom: "40px",
+    //       animationDelay: "1s",
+    //     },
+    //   },
+    // },
     
   ],
 };

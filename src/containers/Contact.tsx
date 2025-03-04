@@ -42,9 +42,9 @@ export function Contact() {
     }
   };
   return (
-    <section id="contact" className="py-32 gradient-bg relative">
+    <section id="contact" className="gradient-bg relative pb-[20px]">
       <div className="absolute inset-0 bg-black/10"></div>
-      <div className="container mx-auto px-6 relative">
+      <div className="container mx-auto px-6 relative py-32 ">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-20">
             Let's Create Something <GradientText>Extraordinary</GradientText>
