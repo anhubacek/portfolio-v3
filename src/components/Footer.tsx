@@ -34,7 +34,7 @@ const FooterWrapper = styled.footer`
   }
 
   .tight {
-    border-radius: 50%;
+    border-radius: 10%;
     width: 100%;
     background: black;
     margin-top: -60px;
@@ -48,7 +48,7 @@ const FooterWrapper = styled.footer`
 
   @media (max-width: 768px) {
     .tight {
-      border-radius: 50%;
+      border-radius: 10%;
       padding: 40px 0;
       width: 100%;
       background: black;
