@@ -16,7 +16,7 @@ const skills = [
     icon: <Code2 className="w-8 h-8" />,
     title: "Frontend Development",
     description:
-      "Developing responsive and intuitive interfaces with React, Next.js, Expo, React Native and modern CSS frameworks",
+      "Developing responsive and intuitive interfaces with React, Next, Vite, Astro, Expo, React Native and modern CSS frameworks",
     color: "from-pink-500 to-rose-500 ",
   },
   {
