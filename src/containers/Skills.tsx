@@ -58,7 +58,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <section className="py-32 bg-black" id="skills">
+    <section className="pt-32 pb-20 bg-black" id="skills">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
           <GradientText>Technical Skills</GradientText>

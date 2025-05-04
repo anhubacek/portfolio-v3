@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section
       className="min-h-screen relative overflow-hidden bg-black"
-      id="about"
+      id="home"
     >
       <div className="absolute inset-0 star-field opacity-50"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>

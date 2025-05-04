@@ -6,10 +6,13 @@ export function Header() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <GradientText className="font-bold text-1xl">AH</GradientText>
+            <a
+            href="#home">
+              <GradientText className="font-bold text-1xl">AH</GradientText>
+            </a>
           </div>
           <div className="flex items-center space-x-8 text-white pr-[2rem] pt-[0.5rem]">
-            <a href="#about" className="font-[500] text-sm">
+            {/* <a href="#about" className="font-[500] text-sm">
               ABOUT
             </a>
             <a href="#skills" className="font-[500] text-sm  ">
@@ -17,7 +20,7 @@ export function Header() {
             </a>
             <a href="#contact" className="font-[500] text-sm  ">
               CONTACT
-            </a>
+            </a> */}
           </div>
         </div>
       </nav>

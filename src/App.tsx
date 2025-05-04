@@ -1,10 +1,11 @@
 import { Hero } from "./containers/Hero";
 import { Skills } from "./containers/Skills";
-import { Contact } from "./containers/Contact";
+// import { Contact } from "./containers/Contact";
 import { Header } from "./components/Header";
 import Footer from "./components/Footer";
 
 import "./styles/animations.css";
+import { Projects } from "./components/Projects";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
       <Header />
       <Hero />
       <Skills />
-      {/* <Projects /> */}
-      <Contact />
+      <Projects />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
