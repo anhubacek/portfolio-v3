@@ -6,7 +6,7 @@ const projects = [
     description:
       "Usable demo of a sign-up flow with form validations and logged state.",
     image:
-      "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800",
+      "/assets/images/projects/mubi.png",
     tech: ["React", "Vite", "Typescript", "Tailwind CSS", "Framer Motion"],
     repository: "https://github.com/anhubacek/digital-wallet-sign-up",
     deployment: "https://mubi-digital-wallet-sign-up-anhubacek.vercel.app/",

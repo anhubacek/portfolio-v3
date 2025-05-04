@@ -42,14 +42,16 @@ export function Hero() {
           </p> */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-[10vh]">
             <a
-              href="#contact"
+              href="https://www.linkedin.com/in/andreahubacek"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group px-4 py-3 md:px-8 md:py-4 w-[184px] md:w-fit bg-gradient-to-r from-[#06b6d4] to-purple-500 backdrop-blur-md text-white rounded-full flex items-center gap-2 transition-all duration-300 ease-in-out hover:gap-4 hover:opacity-90"
             >
               <span className="font-[500]">Let's get in touch</span>
               <ArrowRight className="w-5 h-5 transition-all duration-300 ease-in-out" />
             </a>
             <a
-              href="#projects"
+              href="#skills"
               className=" px-4 py-3 md:px-8 md:py-4 w-[184px] md:w-fit bg-gradient-to-r from-pink-700 to-purple-500 rounded-full flex items-center gap-2 transition-all duration-300 ease-in-out hover:opacity-90"
             >
               <Sparkles className="w-5 h-5" />
