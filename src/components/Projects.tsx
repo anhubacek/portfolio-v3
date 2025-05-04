@@ -45,7 +45,7 @@ export function Projects() {
             <a
               href={project.deployment}
               key={index}
-              className="flex flex-col justify-between rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow h-[60vh] md:h-[500px] text-gray-100 decoration-none"
+              className="flex flex-col justify-between rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow h-[80vh] md:h-[500px] text-gray-100 decoration-none"
             >
               <img
                 src={project.image}
