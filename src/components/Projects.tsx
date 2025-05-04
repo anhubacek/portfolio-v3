@@ -1,11 +1,13 @@
-// import { ExternalLink, Link } from "lucide-react";
+import tarotImg from "./../../public/assets/images/projects/tarot-1.png";
+import mubuImg from "./../../public/assets/images/projects/mubi.png";
+import stripeImg from "./../../public/assets/images/projects/stripe.jpeg";
 
 const projects = [
   {
     title: "MUBI Digital Wallet Sign Up",
     description:
       "Interactive demo of a digital wallet sign-up flow with form validation, state management, and logged-in user simulation.",
-    image: "/assets/images/projects/mubi.png",
+    image: mubuImg,
     tech: ["React", "Vite", "Typescript", "Tailwind CSS", "Framer Motion"],
     repository: "https://github.com/anhubacek/digital-wallet-sign-up",
     deployment: "https://mubi-digital-wallet-sign-up-anhubacek.vercel.app/",
@@ -15,7 +17,7 @@ const projects = [
     description:
       "Rebuilt Stripe Checkout experience with a host app embedding a configurable checkout via iframe and URL parameters.",
 
-    image: "/assets/images/projects/stripe.jpeg",
+    image: stripeImg,
     tech: ["Javascript", "React", "Ant Design", "CSS Modules"],
     repository: "https://github.com/anhubacek/Stripe-Challenge/",
     deployment: "https://stripe-challenge-anhubacek.vercel.app/",
@@ -26,7 +28,7 @@ const projects = [
       "Interactive tarot app with customizable readings by topic and spread type.",
     image: "/assets/images/projects/tarot-1.png",
     tech: ["Next.js", "React", "TypeScript", "CSS Modules"],
-    deployment: "https://tarot-anhubacek.vercel.app/",
+    deployment: tarotImg,
     repository: "https://github.com/anhubacek/lectura-de-tarot/",
   },
 ];
