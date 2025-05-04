@@ -4,20 +4,21 @@ const projects = [
   {
     title: "MUBI Digital Wallet Sign Up",
     description:
-      "Usable demo of a sign-up flow with form validations and logged state.",
-    image:
-      "/assets/images/projects/mubi.png",
+      "Interactive demo of a digital wallet sign-up flow with form validation, state management, and logged-in user simulation.",
+    image: "/assets/images/projects/mubi.png",
     tech: ["React", "Vite", "Typescript", "Tailwind CSS", "Framer Motion"],
     repository: "https://github.com/anhubacek/digital-wallet-sign-up",
     deployment: "https://mubi-digital-wallet-sign-up-anhubacek.vercel.app/",
   },
   {
-    title: "Task Management System",
+    title: "Stripe Checkout Configurator",
     description:
-      "Collaborative project management tool with real-time updates.",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
-    tech: ["TypeScript", "Express", "MongoDB"],
+      "Rebuilt Stripe Checkout experience with a host app embedding a configurable checkout via iframe and URL parameters.",
+
+    image: "/assets/images/projects/stripe.jpeg",
+    tech: ["Javascript", "React", "Ant Design", "CSS Modules"],
+    repository: "https://github.com/anhubacek/Stripe-Challenge/",
+    deployment: "https://stripe-challenge-anhubacek.vercel.app/",
   },
   {
     title: "Analytics Dashboard",
