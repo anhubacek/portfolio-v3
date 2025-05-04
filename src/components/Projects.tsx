@@ -21,11 +21,13 @@ const projects = [
     deployment: "https://stripe-challenge-anhubacek.vercel.app/",
   },
   {
-    title: "Analytics Dashboard",
-    description: "Real-time data visualization platform for business metrics.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    tech: ["Next.js", "Python", "D3.js"],
+    title: "Tarot Card Reading",
+    description:
+      "Interactive tarot app with customizable readings by topic and spread type.",
+    image: "/assets/images/projects/tarot-1.png",
+    tech: ["Next.js", "React", "TypeScript", "CSS Modules"],
+    deployment: "https://tarot-anhubacek.vercel.app/",
+    repository: "https://github.com/anhubacek/lectura-de-tarot/",
   },
 ];
 
@@ -41,7 +43,7 @@ export function Projects() {
             <a
               href={project.deployment}
               key={index}
-              className="flex flex-col justify-between rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow h-[60vh] md:h-[500px]"
+              className="flex flex-col justify-between rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow h-[60vh] md:h-[500px] text-gray-100 decoration-none"
             >
               <img
                 src={project.image}
@@ -60,7 +62,7 @@ export function Projects() {
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm bg-gradient-to-r from-pink-500 to-rose-500 text-gray-100 "
+                        className="px-3 py-1 bg-indigo-100 rounded-full text-sm bg-gradient-to-r from-pink-400 to-rose-500 text-gray-100"
                       >
                         {tech}
                       </span>
